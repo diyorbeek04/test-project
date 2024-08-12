@@ -1,0 +1,88 @@
+.container{
+  width: 100%;
+  max-width: 1240px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 15%;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.menu{
+  width: 40%;
+}
+
+.menu ul{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.menu ul li a{
+  color: #111;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.form{
+  width: 25%;
+}
+
+.form form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form form input{
+  width: 60%;
+  border: 1px solid #333;
+  outline: none;
+  padding: 5px;
+}
+
+.form form select {
+  padding: 5px;
+  outline: none;
+}
+
+.menu .hamburger{
+  display: none;
+}
+
+@media only screen and (max-width: 1240px) {
+  .container{
+    width: 95%;
+    margin: 0px auto;
+  }
+  
+}
+
+@media only screen and (max-width: 675px) {
+  .menu ul{
+    display: none;
+  }
+  .menu .hamburger{
+    display: block;
+  }
+  .form{
+    width: 40%;
+  }
+
+}
